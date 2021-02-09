@@ -1,0 +1,469 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>UR Websoft consulting</title>
+                <link rel="stylesheet" href="./css/mystyle.css">
+                <script src="https://kit.fontawesome.com/e0e8587fe4.js" crossorigin="anonymous"></script>
+                <link rel="shortcut icon" href="./images/favcon.ico" type="image/x-icon">
+            </head>
+            <body>
+            
+                <div class="app">
+             
+            <header>
+            
+                <div class="header-container">
+            
+                    <div class="header-section-1">
+                        <img src="./images/logo/logo_transparent1.png" alt=""><p>websoft consulting</p>
+            
+                    </div>
+            
+                    <div class="header-section-2">
+            
+                        <a href="tel:7991106305"><i class="fas fa-phone-square-alt"></i>+91 7991106305</a>
+            
+                    </div>
+            
+                    
+                       
+            
+            
+                           
+            
+                <label for="toggle"><span>
+                    <div id="togglediv"></div>
+            
+                    <div class="toggle1 toggleclass"></div>
+                    <div class="toggle2 toggleclass"></div>
+                    <div class="toggle3 toggleclass"></div>
+                </span></label>
+            
+            
+            <input type="checkbox" id="toggle">
+             
+            
+            
+            
+            
+                   
+            
+            
+                    <div class="header-section-3">
+            
+                        <nav>
+                            <ul>
+                                <li><a href="/"><i class="fas fa-home"></i> home</a></li>
+                                <li><a href="/">about</a></li>
+                                <li><a  id="service-hover" onmouseover="shof()">services <i class="fas fa-angle-down"></i></a>                 
+                                </li>
+                                <li><a href="/">our works</a></li>
+                                <li><a href="/">contact</a></li>
+                            </ul>
+                        </nav>  
+                        
+                        
+            
+                        <script>
+                            var chec=document.getElementById('toggle')       
+            
+                          chec.addEventListener('click',()=>{
+               
+                            if(chec.checked===true)
+                            {               
+                                let x=document.getElementsByClassName('header-section-3')
+                               
+                                x[0].style.display="block"       
+            
+                            }
+            
+                            if(chec.checked===false)
+                            {       
+                                let x=document.getElementsByClassName('header-section-3')
+                       
+                                      x[0].style.display="none"
+            
+                            }
+  
+            
+                          })
+                       
+            
+                        </script>
+            
+                        
+                        <script>
+                             var shof = ()=>{
+                             var ser=    document.getElementById('service-nested-menu');
+                             if(ser.style.display==="none")
+            
+                                      {
+                                        ser.style.display="block"
+                                      }
+                                      else
+                                      {
+                                        ser.style.display="none" 
+                                      }
+                                }
+            
+                           </script>
+                      
+                    </div>
+            
+                </div>
+            
+            </header>
+            
+
+<main>
+
+    <div class="main-container">
+
+        <section>
+            <div class="main-section-1">
+                <video class="main-section-video" autoplay loop muted src="./videos/coding typing vidoe ( 1080 X 1920 ).mp4"></video>
+
+                <div class="main-section-1-cover">
+
+                    <div class="main-section-1-group">
+
+
+
+
+
+                        <div class="main-section-each-group">
+
+                            <div class="main-section-1-text">
+                                <h1>Web Development <span id="section-1-span">Company</span></h1>
+                                <p>experience the native and hybrid </br> technlogies with  IOS Android app </br> for the startup and corporate world. </p>
+                                    </div>
+                    
+                                    <div class="main-section-1-img"><img src="./images/img/development-img.png" alt=""></div>
+  
+
+                        </div>
+
+
+
+
+                        <div class="main-section-each-group">
+
+                            <div class="main-section-1-text">
+                                <h1>Android Development <span id="section-1-span">Company</span></h1>
+                                <p>Test and improve the online presence </br>of your business and be visible to more </br>people when people search for you. </p>
+                                    </div>
+                    
+                                    <div class="main-section-1-img"><img src="./images/img/android.png" alt=""></div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="main-section-each-group">
+
+                            <div class="main-section-1-text">
+                                <h1>SEO Analysis <span id="section-1-span">Company</span></h1>
+                                <p>experience the native and hybrid </br> technlogies with  IOS Android app </br> for the startup and corporate world. </p>
+                                    </div>
+                    
+                                    <div class="main-section-1-img"><img src="./images/img/seo.png" alt=""></div>
+
+
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="main-section-empty-div">
+                        <div class="main-section-one-footer main-section-1-footer">  <i class="fas fa-code"></i></div>
+                        <div class="main-section-two-footer main-section-1-footer"> <i class="fab fa-android"></i></div>
+                        <div class="main-section-three-footer main-section-1-footer"><i class="fas fa-search"></i></div>
+                     
+                    </div>
+              
+                <!-- <p>We are committed to creating things that have never been before</p> -->
+            </div>
+            </div>
+
+            <script>
+               
+               var funcyvar=0
+            var funcy=()=>{
+                var tran=document.getElementsByClassName('main-section-each-group');
+                var foottran=document.getElementsByClassName('main-section-1-footer');
+               for(var io=0;io<=tran.length-1;io++)
+               {
+                tran[io].style.transform=`translateX(${-100*funcyvar}vw)`
+                                
+               }
+               
+               funcyvar++;
+               if(funcyvar>=3)
+               {
+                   funcyvar=0;
+               }
+
+                 
+
+            }            
+         setInterval(() => {funcy()}, 5000);    
+                   
+
+               
+            </script>
+
+        </section>
+
+                    <!-- 2nd section start here -->
+
+        <section>
+
+
+            <div id="main-section-2" style="background-image: url('./images/background/Background-website-01.jpg'); background-size: cover;">
+                <div id="main-section-2-first-col">
+
+                    <h3>Why Does Your Business Need an </br> Online Presence?</h3>
+                    <p>In the digital age, it is absolutely essential for </br>your business to have an online presence.</br> 
+                        Whether it’s a website, an e-commerce platform,</br> 
+                        a social media page or a combination of all three, </br>
+                        getting your company online will reap major benefits.</br>
+                         Even if your company does not conduct business online, </br>
+                         customers and potential customers are expecting to see </br>
+                          you online.
+                          If they don’t see you there, you could be </br> losing  out on the 
+                           opportunity to increase your customer</br>
+                           base and get the word out about your business. </p>
+
+                           <h5><i class="fas fa-hand-point-right"></i>  Make it Easier for Potential Customers Come to You <br>
+                            <i class="fas fa-hand-point-right"></i>  Make it Easier to Showcase Your Products and Services <br>
+                            <i class="fas fa-hand-point-right"></i>  Make it Easier to Build Relationships with Customers and Potential Customers <br>
+                            <i class="fas fa-hand-point-right"></i>  Make it Easier to Market Your Brand</h5>
+
+                </div>
+
+                <div id="main-section-2-second-col">
+
+                    <img src="images/img/buisiness.png" alt="">
+                    
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+            
+
+            <div class="main-3rd-our_services">
+
+            <h2 style="font-family: Arial, Helvetica, sans-serif;position: absolute; top: 10px; left: 50%;transform: translateX(-50%); color: rgb(43, 183, 226);">our services</h2>
+
+                <div class="main-section-3 our-services-div1">
+
+
+                    <i class="fas fa-code"></i>
+
+                    <h3>Web Development</h3>
+
+                    <p>Want to go online, but have no idea where to start? We'll help you bring your business online with your first website.</p>
+
+
+
+
+                </div>
+
+                <div class="main-section-3 our-services-div2">
+
+                    <i class="fab fa-android"></i>
+
+                    <h3>App Development</h3>
+                    
+                    <p>Have a business, and need a phone app for it? You've come to the right place. Get customised apps for iOS/Android.</p>
+
+       
+
+
+
+                </div>
+
+
+                <div class="main-section-3 our-services-div3">
+
+                    <i class="fas fa-search"></i>
+  
+                    <h3>SEO Analysis</h3>
+
+    
+
+                    <p>Test and improve the online presence of your business and be visible to more people when people search for you.</p>
+
+
+
+                </div>
+
+<!-- 
+                <div class="main-section-3 our-services-div4">
+
+
+                </div>
+
+                <div class="main-section-3 our-services-div5">
+
+
+                </div>
+
+
+                <div class="main-section-3 our-services-div6">
+
+
+                </div> -->
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+            <div class="main-section-4">
+             <div class="main-section-4-cover"></div>
+           
+           
+             <div class="main-section-4-col-1">
+                 <img src="./images/img/weare-img.png"  alt="">
+             </div>
+
+             <div class="main-section-4-col-2" >
+
+                <h2>Best Web Hosting Plans</h2>
+                <p>Affordable. Reliable. Secure.</p>
+
+
+
+
+               
+            </div>
+
+
+            </div>
+        </section>
+
+
+
+        
+    </div>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            
+            <div class="footer-section-col footer-section-col1">
+
+                
+                <form action="/data" method="post">
+
+                    <div class="section-contact-form-group section-contact-form-name">
+                        <label for="name">NAME : </label>
+                        <input type="text" name="name" id="name" placeholder="enter your name">
+                    </div>
+        
+        
+        
+                    <div class="section-contact-form-group section-contact-form-number">
+                        <label for="number">NUMBER : </label>
+                        <input type="number" name="number" id="number" placeholder="mobile number">
+                    </div>
+        
+        
+        
+                    <div class="section-contact-form-group section-contact-form-submit">
+                        <label for="submit"></label>
+                        <input type="submit" value="submit" name="submit" id="submit">
+                    </div>
+                </form>
+        
+
+            </div>
+
+
+
+            <div class="footer-section-col footer-section-col2">
+
+                <h4>Basic links</h4>
+
+
+                <a href="">home</a>
+                <a href="/">about</a>
+                <a href="/">services</a>
+                <a href="/">blog</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Refund/Cancellation</a>
+                <a href="/">Terms of Services</a>
+                <a href="/">contact</a>
+
+            </div>
+
+
+            <div class="footer-section-col footer-section-col3">
+
+                <h4>contact details</h4>
+
+                <a href="">mobile number</a>
+
+                  <a href="tel:+7991106305">7991106305</a>
+
+                  <a href="tel:+7761925594">7761925594</a>
+
+                  <a href="mailto:avinashveera77@gmail.com">urwebsoft@mail.com</a>
+
+                  <h4>address</h4><p>zero mile arrah</br>(bhojpur)bihar</p>
+
+
+
+            </div>
+
+
+            <div class="footer-section-col footer-section-col4">
+
+
+                <h4>urban reach websoft consulting</h4>
+
+
+                <p> urban reach websoft consulting </br> is a  web designing-development, </br> mobile application & software development firm, </br> we provide the best technical solutions for your business to help you grow.</p>
+             <h4>location</h4>
+                <div  class="mapouter"><div class="gmap_canvas"><iframe width="319" height="257" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=319&amp;height=257&amp;hl=en&amp;q=jagdeonagar gali no 1 arrah&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:319px;height:257px;}.gmap_canvas {overflow:hidden;background:none!important;width:319px;height:257px;}</style></div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright" style="width: 100%; height: 50px; position: absolute;background-color: #ffffff; text-align: center; color: black; padding-top: 20px;">
+            © All Rights Reserved By UR websoft consulting
+        </div>
+
+       
+    </div>
+
+</footer>
+
+</div>    
+</body>
+</html>
